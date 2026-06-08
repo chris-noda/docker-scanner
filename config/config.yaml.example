@@ -1,0 +1,26 @@
+# docker-scanner configuration
+
+# Path to vulnerability database
+db_path: ~/.docker-scanner/vulndb
+
+# Maximum severity to report (critical, high, medium, low, unknown)
+max_severity: medium
+
+# CVEs to ignore
+ignore_cves:
+  - CVE-2021-99999
+  - CVE-2020-88888
+
+# Registry authentication
+registries:
+  docker.io:
+    username: ""
+    password: ""
+  ghcr.io:
+    username: ""
+    password: ""
+
+# Scan options
+scan:
+  timeout: 300
+  parallel: 4
